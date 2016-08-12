@@ -1,10 +1,15 @@
 <?php
-	$selected	= 0;
+	$selected	= (defined('SELECTED_VIEW')) ? -1 : 0;
 
 	if (defined('SELECTED_VIEW'))
 	{
 		switch (SELECTED_VIEW)
 		{
+			case '':
+			case 'home':
+				$selected = 1;
+				break;
+
 			case 'our_story.php':
 				$selected = 1;
 				break;
