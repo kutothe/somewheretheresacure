@@ -2,11 +2,16 @@
 
 #slick-carousel-container {
 	float:right;
-	max-width: 585px;
+	max-width: 504px;
+	background: #aaa;
 
 	@include max($mobile-break) {
 		float: none;
 		margin: 12px auto;
+	}
+
+	img {
+		margin: 0 auto; /* it centers any block level element */
 	}
 }
 
@@ -34,21 +39,31 @@
 }
 
 .slick-prev {
-    left: 4px;
+    left: 6px;
 	background: transparent url('../img/icon-slideshow-arrow-left.png') no-repeat center center;
+	opacity: .6;
 
 	&:hover, &:focus {
-        background: transparent url('../img/icon-slideshow-arrow-left-orange.png') no-repeat center center;
-    }
+        background: transparent url('../img/icon-slideshow-arrow-left.png') no-repeat center center;
+	}
+
+	&:hover {
+		opacity: 1;
+	}
 }
 
 .slick-next {
-    right: 4px;
+    right: 6px;
     background: transparent url('../img/icon-slideshow-arrow-right.png') no-repeat center center;
+	opacity: .6;
 
 	&:hover, &:focus {
-        background: transparent url('../img/icon-slideshow-arrow-right-orange.png') no-repeat center center;
-    }
+        background: transparent url('../img/icon-slideshow-arrow-right.png') no-repeat center center;
+	}
+
+	&:hover {
+		opacity: 1;
+	}
 }
 
 /* Dots */

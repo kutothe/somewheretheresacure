@@ -1,13 +1,20 @@
 
 <?php require_once(BASE_PATH.'views/templates/header.php'); ?>
 
-<h2>
-	Our Story
-</h2>
+<div class="our-story-container">
+	<div class="left-column">
+		<h2 class="page-title">
+			Our Story
+		</h2>
 
-<p class="intro-emphasize">
-	On 9/29/2000 our beautiful innocent little daughter Sarah was diagnosed with Juvenile Diabetes at 3 years old. She and we had no idea the road that was ahead of all of us. I had only known 2 people in my whole life that had diabetes when I was growing up. Never in a million years would I ever think my child would have diabetes -especially since it did not run in either of our families. The doctors and nurses at the hospital were surprised when we told them no one on either side of our families had diabetes.
-</p>
+		<p class="intro-emphasize">
+			On 9/29/2000 our beautiful innocent little daughter Sarah was diagnosed with Juvenile Diabetes at 3 years old. She and we had no idea the road that was ahead of all of us. I had only known 2 people in my whole life that had diabetes when I was growing up. Never in a million years would I ever think my child would have diabetes -especially since it did not run in either of our families. The doctors and nurses at the hospital were surprised when we told them no one on either side of our families had diabetes.
+		</p>
+	</div>
+	<div class="right-column">
+		<?php require_once(BASE_PATH.'views/photos.php'); ?>
+	</div>
+</div>
 
 <p>
 	I remember like it was yesterday... It was a Friday afternoon. I had taken the afternoon off from work because I could not find a sitter. Earlier in the week our sitter had mentioned to us that Sarah had been drinking a lot. We did not seem all that concerned, I was actually trying to decide whether to take her to the Doctor's office or go shopping. We had called and the Doctor's office and they said we could come in and they would see her. The deciding factor was that it was a Friday and we knew the office would be closed for the weekend so we decided to just go and check it out. We had no idea what it might be.<br>
@@ -65,6 +72,5 @@
 <p>
 	Sarah is now 16 years old, doing very well on the Pump, now we are waiting for the cure...
 </p>
-
 
 <?php require_once(BASE_PATH.'views/templates/footer.php'); ?>

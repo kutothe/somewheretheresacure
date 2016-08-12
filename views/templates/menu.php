@@ -33,7 +33,7 @@
 		<a href="<?php echo BASE_URL; ?>" alt="Our Story"><span>Our Story</span></a>
 	</li>
 	<li class="<?php if ($selected == 1) echo 'selected' ?>">
-		<a href="<?php echo BASE_URL; ?>photo_album" alt="Photo Album"><span>Photo Album</span></a>
+		<a href="<?php echo BASE_URL; ?>photo_album" alt="Photos"><span>Photos</span></a>
 	</li>
 	<li class="<?php if ($selected == 2) echo 'selected' ?>">
 		<a href="<?php echo BASE_URL; ?>our_favorite_charities" alt="Charities"><span>Charities</span></a>

@@ -1,0 +1,15 @@
+
+.our-story-container {
+	@include outer-container;
+
+	.left-column {
+		@include min($mobile-break+1) {
+			@include span-columns(6);
+		}
+	}
+	.right-column {
+		@include min($mobile-break+1) {
+			@include span-columns(6);
+		}
+	}
+}
