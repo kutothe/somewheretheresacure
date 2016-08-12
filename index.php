@@ -23,6 +23,10 @@
 			{
 				$view	= 'error_404.php';
 			}
+			else
+			{
+				define('SELECTED_VIEW', $view);
+			}
 		}
 	}
 

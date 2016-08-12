@@ -23,10 +23,12 @@
 
 	#app-menu {
 		li {
+			position: relative;
 			display: inline-block;
-			height: 46px;
+			height: 26px;
 			margin-right: 40px;
-			transition: height .2s linear;
+			border-bottom: 2px solid transparent;
+			transition: height .2s linear, border-bottom-color .2s linear;
 
 			a {
 				padding: 12px 0;
@@ -34,6 +36,10 @@
 				font-weight: 600;
 				font-size: .9em;
 				color: #fff;
+			}
+
+			&:hover, &.selected {
+				border-bottom: 2px solid #fff;
 			}
 		}
 	}
@@ -47,6 +53,7 @@
 	.header-left {
 
 		padding-top: 45px;
+		padding-bottom: 14px;
 		transition: padding .2s linear;
 
 		@include min($mobile-break+1) {
