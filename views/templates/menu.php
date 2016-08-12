@@ -46,7 +46,7 @@
 	<li class="<?php if ($selected == 5) echo 'selected' ?>">
 		<a href="<?php echo BASE_URL; ?>thank_you" alt="Thank You"><span>Thank You</span></a>
 	</li>
-	<li class="<?php if ($selected == 5) echo 'selected' ?>">
+	<li class="<?php if ($selected == 6) echo 'selected' ?>">
 		<a href="<?php echo BASE_URL; ?>contact" alt="Contact Us"><span>Contact Us</span></a>
 	</li>
 </ul>
