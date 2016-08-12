@@ -25,14 +25,15 @@
 			case 'thank_you.php':
 				$selected = 5;
 				break;
+
+			case 'contact.php':
+				$selected = 6;
+				break;
 		}
 	}
 ?>
 
 <ul id="app-menu">
-	<li class="<?php if ($selected == 0) echo 'selected' ?>">
-		<a href="<?php echo BASE_URL; ?>" alt="Home"><span>Home</span></a>
-	</li>
 	<li class="<?php if ($selected == 1) echo 'selected' ?>">
 		<a href="<?php echo BASE_URL; ?>our_story" alt="Our Story"><span>Our Story</span></a>
 	</li>
@@ -44,5 +45,8 @@
 	</li>
 	<li class="<?php if ($selected == 5) echo 'selected' ?>">
 		<a href="<?php echo BASE_URL; ?>thank_you" alt="Thank You"><span>Thank You</span></a>
+	</li>
+	<li class="<?php if ($selected == 5) echo 'selected' ?>">
+		<a href="<?php echo BASE_URL; ?>contact" alt="Contact Us"><span>Contact Us</span></a>
 	</li>
 </ul>
