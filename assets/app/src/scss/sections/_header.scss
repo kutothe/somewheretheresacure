@@ -24,9 +24,12 @@
 	#app-menu {
 		li {
 			display: inline-block;
+			height: 46px;
 			margin-right: 40px;
+			transition: height .2s linear;
 
 			a {
+				padding: 12px 0;
 				font-family: $montserrat;
 				font-weight: 600;
 				font-size: .9em;
@@ -44,7 +47,6 @@
 	.header-left {
 
 		padding-top: 45px;
-		padding-bottom: 14px;
 		transition: padding .2s linear;
 
 		@include min($mobile-break+1) {
@@ -96,6 +98,12 @@
 
 			#header-app-logo {
 				margin-bottom: 18px;
+			}
+
+			#app-menu {
+				li {
+					height: 37px;
+				}
 			}
 		}
 	}
