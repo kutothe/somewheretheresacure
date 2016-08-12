@@ -22,7 +22,7 @@
 
 		slickCon.slick({
 			infinite: true,
-			dots: true,
+			dots: false,
 			autoplay: true,
 			autoplaySpeed: 5000
 		});
