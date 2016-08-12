@@ -1,0 +1,21 @@
+.server-error-page {
+	padding-top: 2.5em;
+	padding-bottom: 3.75em;
+	text-align: center;
+
+	h1 {
+		font-size: 150px;
+		color: $light-gray;
+		// padding-top: 125px;
+		padding-bottom: 75px;
+		text-align: center;
+		line-height: 120px;
+		margin-bottom: 0;
+
+		&.bad-error {
+			font-size: 75px;
+			padding-bottom: 25px;
+			color: #aa0000;
+		}
+	}
+}

@@ -1,0 +1,71 @@
+
+.social-links--with-icons {
+	p {
+		text-transform: uppercase;
+		font-size: 15px;
+		font-weight: 700;
+		font-family: "Myraid Pro", Helvetica, Roboto, Arial, sans-serif;
+	}
+
+	a:before {
+		content: "";
+		width:29px;
+		height: 29px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		margin: auto 0;
+		border: 2px solid #282828;
+		border-radius: 4px;
+
+		background-repeat: no-repeat !important;
+		-webkit-transition: border 300ms ease;
+		-moz-transition: border 300ms ease;
+		transition: border 300ms ease;
+	}
+
+	a:hover:before {
+		border: 2px solid white;
+		// border-radius: 5.5px;
+	}
+
+	ul {
+		margin-left: -2px;
+
+		li {
+			position: relative;
+			width: 30px;
+			height: 30px;
+			display: inline-block;
+			margin-right: 7px;
+
+			&.facebook {
+				a:before {
+					background: url('../img/icon-facebook.png');
+				}
+			}
+
+			&.twitter {
+				a:before {
+					background: url('../img/icon-twitter.png');
+				}
+			}
+
+			&.instagram {
+				a:before {
+					background: url('../img/icon-instagram.png');
+				}
+			}
+
+			&.youtube {
+				a:before {
+					width: 39px;
+					height: 29px;
+					border-radius: 10px;
+					background: url('../img/icon-youtube.png');
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,122 @@
+@mixin font-smoothing($value: on) {
+  @if $value == on {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+@function lower-bound($range) {
+  @if length($range) <= 0 {
+    @return 0;
+  }
+  @return nth($range, 1);
+}
+
+@function upper-bound($range) {
+  @if length($range) < 2 {
+    @return 999999999999;
+  }
+  @return nth($range, 2);
+}
+
+@mixin between($min, $max) {
+  @media (min-width: #{$min}) and (max-width: #{$max}) { @content }
+}
+
+@mixin min($size) {
+  @media (min-width: #{$size}) { @content }
+}
+
+@mixin max($size) {
+  @media(max-width: #{$size}) { @content }
+}
+
+@mixin grid-row($local-max-width: $max-width) {
+  @include outer-container($max-width);
+  @include pad(0 $gutter/2);
+}
+
+@mixin collapse-right() {
+  padding-right: 0;
+}
+
+@mixin collapse-left() {
+  padding-left: 0;
+}
+
+@mixin collapse() {
+  @include collapse-left();
+  @include collapse-right();
+}
+
+@mixin zero() {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin plr($pad) {
+  padding-left: $pad;
+  padding-right: $pad;
+}
+@mixin ptb($pad) {
+  padding-top: $pad;
+  padding-bottom: $pad;
+}
+
+@mixin mlr($pad) {
+  margin-left: $pad;
+  margin-right: $pad;
+}
+@mixin mtb($pad) {
+  margin-left: $pad;
+  margin-right: $pad;
+}
+
+@mixin button($rest-color, $hover-color: $rest-color) {
+  background-color: $rest-color;
+  border-radius: 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 1em;
+  line-height: 1;
+  padding: .75em 1em;
+  text-decoration: none;
+  @include appearance(none);
+  @include font-smoothing(on);
+  @include transition(background-color 200ms ease);
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+@mixin fancy-underline($size: 1) {
+  @if $size == 0 {
+    &:hover:before {
+      visibility: hidden !important;
+    }
+  }
+  @else {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: #{$size}px;
+      bottom: -#{$size+1}px;
+      left: 0;
+      background-color: $action-color;
+      visibility: hidden;
+      @include transform(scaleX(0));
+      @include transition(all 150ms ease-in-out 0s);
+    }
+    &:hover:after {
+      visibility: visible;
+      @include transform(scaleX(1));
+    }
+  }
+}

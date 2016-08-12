@@ -1,0 +1,10 @@
+.container-of-icon-with-text {
+  .icon {
+    @include span-columns(2);
+  }
+
+  .icon + div {
+    @include span-columns(10);
+    @include omega();
+  }
+}

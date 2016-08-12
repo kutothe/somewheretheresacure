@@ -1,0 +1,33 @@
+// A lot of sites will have a footer with the site name and the parent department's name.  This is the file that you
+// should handle that in.
+
+#logo-footer-dirs {
+	position: relative;
+	display: inline-block;
+	box-sizing: content-box;
+	width: 212px;
+	height: 15px;
+	padding-top: 130px;
+	padding-bottom: 3px;
+	text-align: center;
+	font-size: .88em;
+	background: transparent url('../img/logo-footer-dirs.png') no-repeat center 8px;
+
+	&:after {
+	    content: "";
+	    position: absolute;
+	    width: 212px;
+	    height: 1px;
+	    bottom: -3px;
+	    left: 0;
+	    background-color: $action-color;
+	    visibility: hidden;
+	    transform: scaleX(0);
+	    transition: all 150ms ease-in-out 0s;
+	}
+
+	&:hover:after {
+	    visibility: visible;
+	    transform: scaleX(1);
+	}
+}

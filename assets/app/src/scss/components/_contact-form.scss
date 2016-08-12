@@ -1,0 +1,177 @@
+
+.region-footer-contact-form, .region-contact-form {
+	fieldset {
+		background: none;
+		border: none;
+		margin: 0;
+		padding: 0;
+
+		legend {
+			display: none;
+		}
+	}
+
+	.webform-component {
+		position: relative;
+
+		label {
+			display:none;
+		}
+	}
+
+	.form-actions {
+		text-align: right;
+	}
+
+	.contact-submission-message {
+		margin: 0;
+	    padding: 15px 0 0 90px;
+	    background-image: url('../img/icon-footer-checkmark.png');
+	    background-repeat: no-repeat;
+	    background-position: left 15px;
+
+		h2 {
+			margin: 0 0 15px 0;
+		    font-family: "Myriad Pro", sans-serif;
+		    font-size: 24px;
+		    color: #ffffff;
+		    text-transform: none;
+    		padding: 0;
+		    font-weight: normal;
+		    line-height: 1em;
+		}
+
+		p {
+			margin: 0 0 10px 0;
+		    font-size: 14px;
+		    color: #afaeaf;
+		    line-height: 1.4em;
+		}
+	}
+}
+
+.region-contact-form {
+	h2 {
+		font-size: 1.3em;
+	}
+
+	.contact-submission-message {
+		h2 {
+			font-size: 21px;
+		    color: #000000;
+		}
+
+		p {
+			color: #444444;
+		}
+	}
+}
+
+.region-footer-contact-form {
+
+	.form-required {
+		color: $action-color;
+	}
+
+	$webform-breakpoint: $mobile-break;
+
+	.field-name-body {
+		font-size: 13px;
+	}
+
+	fieldset {
+		@include min($webform-breakpoint) {
+			@include span-columns(6);
+		}
+	}
+
+	.webform-component--message {
+		@include min($webform-breakpoint) {
+			@include span-columns(6);
+			@include omega();
+		}
+	}
+
+	.form-actions {
+		@include max($webform-breakpoint) {
+			text-align: center;
+		}
+	}
+
+	input {
+		margin-bottom: 1em;
+	}
+
+	input[type="text"], input[type="email"], textarea {
+		border: 0;
+		background: #afafaf;
+		font-size: 12px;
+		color: black;
+		border-radius: 0;
+		outline: none !important;
+		padding: .75em;
+		// margin-bottom: 1em;
+		text-transform: none;
+
+		&:hover, &:focus, &:active, &:required {
+			outline: 0;
+			border:  0px;
+			// border-left: 1px solid #515151;
+			box-shadow: none;
+		}
+	}
+
+	textarea {
+		height: 84px;
+		margin-bottom: 1.4em;
+	}
+
+	.webform-component {
+
+		::-webkit-input-placeholder {
+			color: #20201f;
+			opacity: 1;
+			font-family: "Helvetica", sans-serif;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+			color: #20201f;
+			opacity: 1;
+			font-family: "Helvetica", sans-serif;
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+			color: #20201f;
+			opacity: 1;
+			font-family: "Helvetica", sans-serif;
+		}
+
+		:-ms-input-placeholder {
+			color: #20201f;
+			opacity: 1;
+			font-family: "Helvetica", sans-serif;
+		}
+	}
+
+	.webform-component--message {
+		label {
+			top: 20px;
+		}
+	}
+
+	.webform-component.focused label {
+		// top: 0;
+	}
+
+	//Confirmation block
+
+	.ajax-progress-throbber {
+		display: none;
+	}
+
+	#webform-ajax-wrapper-1374 {
+		.messages {
+			display: none;
+		}
+	}
+}

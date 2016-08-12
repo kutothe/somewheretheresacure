@@ -1,0 +1,173 @@
+
+fieldset {
+	background-color: lighten($base-border-color, 10%);
+	border: $base-border;
+	margin: 0 0 $small-spacing;
+	padding: $base-spacing;
+}
+
+input,
+label,
+select {
+	display: block;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+}
+
+label {
+	font-weight: 600;
+	margin-bottom: $small-spacing / 2;
+
+	&.required::after {
+		content: "*";
+	}
+
+	abbr {
+		display: none;
+	}
+
+	&.for-radio {
+		font-weight: normal;
+		display: inline-block;
+	}
+
+	&.error {
+		color: #ff0000;
+		font-size: .8em;
+	    margin: 8px 0 10px;
+	}
+}
+
+#{$all-text-inputs},
+select[multiple=multiple],
+select,
+textarea {
+	background-color: #fdfdfd;
+	border: $base-border;
+	border-radius: $base-border-radius;
+	box-shadow: none;
+	box-sizing: border-box;
+	outline: none;
+    font-family: $base-font-family;
+	font-size: 16px;
+	margin-bottom: $base-spacing / 2;
+	padding: 8px 12px;
+	transition: border-color;
+	width: 100%;
+
+	&:hover {
+		border-color: darken($base-border-color, 10%);
+	}
+
+	&:focus {
+		border-color: #39a6ec;
+		box-shadow: none;
+		outline: none;
+	}
+
+	&.long { width: 400px; }
+	&.medium { width: 200px; }
+	&.short { width: 100px; }
+
+	&.long, &.medium, &.short {
+		display: inline-block;
+	}
+}
+
+textarea {
+	resize: vertical;
+	height: 158px;
+}
+
+input[type="search"] {
+	@include appearance(none);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	display: inline;
+	margin-right: $small-spacing / 2;
+}
+
+input[type="file"] {
+	padding-bottom: $small-spacing;
+	width: 100%;
+}
+
+select {
+	margin-bottom: $base-spacing;
+	max-width: 100%;
+	width: auto;
+}
+
+.select-wrapper {
+	position: relative;
+
+	&::after {
+		width: 0;
+	    height: 0;
+	    border: 6px solid transparent;
+	    border-top-color: #5f5f5f;
+	    position: absolute;
+	    right: 12px;
+	    top: 18px;
+	    content: "";
+	    pointer-events: none;
+	}
+
+	select {
+		height: 42px;
+		width: 100%;
+	    padding-right: 29px;
+		cursor: pointer;
+		-webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+
+		&:-moz-focusring {
+		    color: transparent;
+		    text-shadow: 0 0 0 #000;
+		}
+	}
+
+	option {
+		outline: none;
+		border: none;
+	}
+}
+
+/*
+ * submission form styles
+ */
+.styled-form {
+	.form-group {
+		margin-bottom: 34px;
+	}
+	label.block {
+		margin-bottom: 8px;
+		font-weight: bold;
+	}
+	input[type="radio"] {
+		margin-right: 5px;
+	}
+}
+
+/*
+ * text input with icon
+ */
+.icon-text-input-container {
+	position:relative;
+	white-space: nowrap;
+	display: inline-block;
+
+	input[type="text"] {
+		padding-left: 42px;
+		min-width: 350px;
+	}
+
+	img {
+		position: absolute;
+		top: 14px;
+		left: 14px;
+	}
+}

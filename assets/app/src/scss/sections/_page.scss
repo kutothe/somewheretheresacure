@@ -1,0 +1,29 @@
+
+main {
+
+	& > .container {
+
+		@include min(979px) {
+			min-height: 475px;
+		}
+
+		& > .page-content {
+			margin: 90px 0;
+
+			@include max($mobile-break) {
+				margin: 50px 0;
+			}
+		}
+
+		#main-content-header {
+			& > div {
+		    	position: relative;
+
+				@include max($mobile-break) {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+}

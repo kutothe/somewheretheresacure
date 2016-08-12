@@ -1,0 +1,22 @@
+
+#back-to-top-button {
+	padding: 7px;
+	width: 44px;
+	height: 44px;
+	display: block;
+	position: fixed;
+	z-index: 103;
+	bottom: -50px;
+	right: 20px;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	background-color: rgba($action-color, 0.6);
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAoklEQVQ4T7WT0Q3CMAwFzxPAJjBCNwEmYIWyAWzQUboCm8AEDxklSAS7Qoqa79z5xXoxOo918qwrkDQCMrNLljRNIGkCDgWczOwUSUJBA1culPwIGvhe6F2W5EsQwEMBZyCUfAQRbGYPF0jaAqHkLViC6wIyiUm6Audy0d881Mnt1gPJzQUecwMswkmSpwv2gBfmmE1OknhPxnWr/M9H607wAmdEULiH7yPiAAAAAElFTkSuQmCC');
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+}
+
+#back-to-top-button.shown {
+	bottom: 14px;
+}

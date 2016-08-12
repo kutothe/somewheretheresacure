@@ -1,0 +1,49 @@
+
+.contact-links--with-icons {
+	margin-left: 38px;
+	font-size: 13px;
+	padding-bottom: 30px;
+
+	a {
+		text-decoration: none;
+		padding-bottom: 2px;
+		@include fancy-underline(1);
+	}
+
+	li:before {
+		content: "";
+		width: 27px;
+		height: 32px;
+		position: absolute;
+		left: -38px;
+		margin: auto 0;
+		border: 2px solid transparent;
+		background-repeat: no-repeat !important;
+		transition: border 300ms ease;
+	}
+
+	ul {
+		li {
+			position: relative;
+			padding-bottom: 10px;
+			line-height: 2em;
+
+			&.location:before {
+				background: url('../img/icon-address.png');
+			}
+
+			&.email:before {
+				background: url('../img/icon-email.png');
+			}
+
+			&.phone:before {
+				background: url('../img/icon-phone.png');
+			}
+
+			&.support:before {
+				background: url('../img/icon-gift.png');
+			}
+		}
+	}
+
+}

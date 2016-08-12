@@ -1,0 +1,65 @@
+Options -Indexes
+
+<IfModule pagespeed_module>
+	ModPagespeed off
+</IFModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /somewheretheresacure/
+
+	RewriteCond %{HTTPS} !=on
+	RewriteCond %{SERVER_NAME} !localhost
+	RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+
+    #Checks to see if the user is attempting to access a valid file,
+    #such as an image or css document, if this isn't true it sends the
+    #request to index.php
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    #This last condition enables access to the images and css folders, and the robots.txt file
+    #Submitted by Michael Radlmaier (mradlmaier)
+    RewriteCond $1 !^(index\.php|img|js|images|robots\.txt|css)
+    RewriteRule ^(.*)$ index.php?/$1 [L]
+
+	RewriteCond %{SERVER_PORT} !^443$
+	RewriteRule ^/(.*)$ https://%{HTTP_HOST}/$1
+</IfModule>
+
+FileETag none
+
+<IfModule mod_deflate.c>
+	<FilesMatch "\.(css|js)$">
+	SetOutputFilter DEFLATE
+	</FilesMatch>
+#  <FilesMatch "\.(htm|html|css|js|php)$">
+
+	# Deactivate compression for buggy browsers
+	BrowserMatch ^Mozilla/4 gzip-only-text/html
+	BrowserMatch ^Mozilla/4\.0[678] no-gzip
+	BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
+
+<IfModule mod_expires.c>
+        ExpiresActive On
+        ExpiresDefault A0
+</IfModule>
+
+<IfModule mod_headers.c>
+        <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|svg|swf)$">
+        ExpiresDefault A29030400
+        Header append Cache-Control "public"
+        </FilesMatch>
+
+        # Force no caching for dynamic files
+        <FilesMatch "\.(php|cgi|pl|htm|html)$">
+        ExpiresActive Off
+        Header set Cache-Control "private, no-cache, no-store, proxy-revalidate, no-transform"
+        Header set Pragma "no-cache"
+        </FilesMatch>
+</IfModule>
+
+# add MIME types for fonts
+AddType application/vnd.ms-fontobject .eot
+AddType font/ttf .ttf
+AddType font/otf .otf
