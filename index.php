@@ -6,7 +6,7 @@
 
 
 	$params				= NULL;
-	$view				= 'our_story.php';
+	$view				= 'home.php';
 	$view_path			= './views/';
 
 	if (is_array($_GET) && count($_GET) == 1)
