@@ -1,4 +1,10 @@
 
+<div id="mobile-menu-bar">
+	<button class="c-hamburger c-hamburger--htla">
+		<span>toggle menu</span>
+	</button>
+	<h1>Somewhere There's a Cure</h1>
+</div>
 <header id="header">
     <div class="fixed">
         <div class="container">

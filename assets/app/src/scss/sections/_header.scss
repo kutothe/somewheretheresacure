@@ -1,4 +1,32 @@
 
+#mobile-menu-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 52px;
+	background-color: $action-color;
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+	z-index: 1001;
+
+	.c-hamburger {
+		 position: absolute;
+		 left: 6px;
+		 top: 12px;
+	}
+
+	h1 {
+		margin-top: 16px;
+		text-align: center;
+		font-size: 1.2em;
+		color: #fff;
+	}
+
+	@include min($mobile-break + 1) {
+		display: none;
+	}
+}
+
 #header {
 
 	background: #5d0088;
@@ -10,11 +38,14 @@
 		min-height: 178px;
 	}
 
+	@include max($mobile-break) {
+		min-height: 186px;
+		background: #eee;
+	}
+
 	#header-app-logo {
-		display: block;
-		text-align: center;
+		display: none;
 		margin-bottom: 36px;
-		font-size: 1.3em;
 		font-weight: 600;
 		color: #fff;
 		font-family: $montserrat;
@@ -22,7 +53,6 @@
 
 		@include min($mobile-break + 1) {
 			display: inline-block;
-			text-align: left;
 			width: 460px;
 			font-size: 2.1em;
 		}
@@ -59,15 +89,50 @@
 		    overflow-y: scroll;
 		    z-index: 999;
 		    transform: translate3D(-290px, 0, 0);
-		    transition: all .25s ease-in-out;
+		    transition: all .3s ease-in-out;
+			background: #fff;
+
+			li {
+				display: block;
+				height: auto;
+				margin: 0;
+				padding: 0;
+				border: 0;
+
+				a {
+					display: block;
+					padding: 16px;
+					color: $action-color;
+					border-bottom: 1px solid #ddd;
+				}
+
+				&:last-child a {
+					border-bottom: none;
+				}
+
+				&.selected a {
+					background-color: #eee;
+				}
+
+				&:hover, &.selected {
+					border-bottom: none;
+				}
+			}
 		}
 	}
 
 	.fixed {
 		min-height: 178px;
 		background: #5d0088;
+		color: #fff;
 		box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
 		@include position(absolute, 0 0 0 0);
+
+		@include max($mobile-break) {
+			background: #eee;
+			box-shadow: none;
+			color: #000;
+		}
 	}
 
 	.header-left {
@@ -81,7 +146,6 @@
 	}
 
 	.header-right {
-		color: #fff;
 		text-align: center;
 		transition: padding .2s linear;
 
@@ -99,41 +163,17 @@
 			text-align: right;
 			@include span-columns(3.5);
 		}
+
+		@include max($mobile-break) {
+			padding-top: 24px;
+		}
 	}
 }
 
 body.menuout #header {
 	#app-menu {
-		background: #fff;
-	    transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
 		box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
-
-		li {
-			display: block;
-			height: auto;
-			margin: 0;
-			padding: 0;
-			border: 0;
-
-			a {
-				display: block;
-				padding: 16px;
-				color: $action-color;
-				border-bottom: 1px solid #ddd;
-			}
-
-			&:last-child a {
-				border-bottom: none;
-			}
-
-			&.selected a {
-				background-color: #eee;
-			}
-
-			&:hover, &.selected {
-				border-bottom: none;
-			}
-		}
 	}
 }
 
