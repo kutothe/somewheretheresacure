@@ -176,7 +176,7 @@
 		}
 
 		@include min($mobile-break+1) {
-			padding-top: 56px;
+			padding-top: 81px;
 			text-align: right;
 			@include span-columns(3.5);
 		}
@@ -212,7 +212,7 @@ body.menuout #header {
 			}
 
 			.header-right {
-				padding-top: 26px;
+				padding-top: 32px;
 			}
 
 			#header-app-logo {
