@@ -12,7 +12,7 @@
 
 <title><?php echo empty($page_title) ? '' : ' | '.$page_title; ?>Somewhere There's a Cure</title>
 
-<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon"/>
+<link rel="shortcut icon" href="<?php echo BASE_URL; ?>favicon.ico?1" type="image/vnd.microsoft.icon"/>
 
 
 <link href="<?php echo ASSETS_URL; ?>css/app<?php if (USE_MINIFIED_ASSETS) echo '.min'; ?>.css?<?php echo ASSETS_CACHE_FIX; ?>" rel="stylesheet" type="text/css" />
