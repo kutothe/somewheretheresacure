@@ -81,6 +81,10 @@
 			}
 		}
 
+		li.home {
+			display: none;
+		}
+
 		@include max($mobile-break) {
 			position: fixed;
 		    top: 52px;
@@ -99,6 +103,10 @@
 				margin: 0;
 				padding: 0;
 				border: 0;
+
+				&.home {
+					display: block;
+				}
 
 				a {
 					display: block;

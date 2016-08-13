@@ -7,7 +7,7 @@
 		{
 			case '':
 			case 'home':
-				$selected = 1;
+				$selected = 0;
 				break;
 
 			case 'our_story.php':
@@ -34,6 +34,9 @@
 ?>
 
 <ul id="app-menu">
+	<li class="<?php if ($selected == 0) echo 'selected' ?> home">
+		<a href="<?php echo BASE_URL; ?>" alt="Home"><span>Home</span></a>
+	</li>
 	<li class="<?php if ($selected == 1) echo 'selected' ?>">
 		<a href="<?php echo BASE_URL; ?>our_story" alt="Our Story"><span>Our Story</span></a>
 	</li>
