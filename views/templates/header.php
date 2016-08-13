@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 <meta http-equiv="cleartype" content="on" />
 <meta name="format-detection" content="telephone=no" />
-<meta name="theme-color" content="#000000" />
+<meta name="theme-color" content="#5d0088" />
 
 <title><?php echo empty($page_title) ? '' : ' | '.$page_title; ?>Somewhere There's a Cure</title>
 
