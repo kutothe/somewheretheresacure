@@ -2,23 +2,30 @@
 #header {
 
 	background: #5d0088;
-	min-height: 173px;
+	min-height: 243px;
 	transition: height .2s linear;
 
 	@include position(relative);
 	@include min($mobile-break + 1) {
-		height: 178px;
+		min-height: 178px;
 	}
 
 	#header-app-logo {
-		display: inline-block;
-		width: 460px;
+		display: block;
+		text-align: center;
 		margin-bottom: 36px;
-		font-size: 2.1em;
+		font-size: 1.3em;
 		font-weight: 600;
 		color: #fff;
 		font-family: $montserrat;
 		transition: margin .2s linear;
+
+		@include min($mobile-break + 1) {
+			display: inline-block;
+			text-align: left;
+			width: 460px;
+			font-size: 2.1em;
+		}
 	}
 
 	#app-menu {
@@ -42,16 +49,28 @@
 				border-bottom: 2px solid #fff;
 			}
 		}
+
+		@include max($mobile-break) {
+			position: fixed;
+		    top: 52px;
+			left: 0;
+		    width: 290px;
+		    max-height: calc(100vh - 52px);
+		    overflow-y: scroll;
+		    z-index: 999;
+		    transform: translate3D(-290px, 0, 0);
+		    transition: all .25s ease-in-out;
+		}
 	}
 
 	.fixed {
+		min-height: 178px;
 		background: #5d0088;
 		box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
 		@include position(absolute, 0 0 0 0);
 	}
 
 	.header-left {
-
 		padding-top: 45px;
 		padding-bottom: 14px;
 		transition: padding .2s linear;
@@ -59,14 +78,11 @@
 		@include min($mobile-break+1) {
 			@include span-columns(8.5);
 		}
-
 	}
 
 	.header-right {
-
 		color: #fff;
-		padding-top: 56px;
-		text-align: right;
+		text-align: center;
 		transition: padding .2s linear;
 
 		audio {
@@ -79,7 +95,44 @@
 		}
 
 		@include min($mobile-break+1) {
+			padding-top: 56px;
+			text-align: right;
 			@include span-columns(3.5);
+		}
+	}
+}
+
+body.menuout #header {
+	#app-menu {
+		background: #fff;
+	    transform: translate3d(0, 0, 0);
+		box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+
+		li {
+			display: block;
+			height: auto;
+			margin: 0;
+			padding: 0;
+			border: 0;
+
+			a {
+				display: block;
+				padding: 16px;
+				color: $action-color;
+				border-bottom: 1px solid #ddd;
+			}
+
+			&:last-child a {
+				border-bottom: none;
+			}
+
+			&.selected a {
+				background-color: #eee;
+			}
+
+			&:hover, &.selected {
+				border-bottom: none;
+			}
 		}
 	}
 }
@@ -95,6 +148,8 @@
 
 	body.shrunk-header {
 		#header .fixed {
+			min-height: 124px;
+
 			.header-left {
 				padding-top: 14px;
 			}
