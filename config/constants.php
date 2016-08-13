@@ -1,6 +1,9 @@
 <?php
 
-	define('BASE_URL', '/somewheretheresacure/');
+	$server_name	= strtolower($_SERVER['SERVER_NAME']);
+
+	define('IS_LOCAL_SERVER', in_array($server_name, array('172.16.237.130', 'localhost')));
+	define('BASE_URL', (IS_LOCAL_SERVER) ? '/somewheretheresacure/' : '/');
 	define('BASE_PATH', realpath(dirname(__FILE__)).'/../');
 	define('ASSETS_URL', BASE_URL.'assets/app/dist/');
 	define('ASSETS_PATH', BASE_PATH.'assets/app/dist/');

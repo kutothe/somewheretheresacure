@@ -8,11 +8,7 @@ Options -Indexes
     RewriteEngine On
     RewriteBase /somewheretheresacure/
 
-	RewriteCond %{HTTPS} !=on
-	RewriteCond %{SERVER_NAME} !localhost
-	RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
-
-    #Checks to see if the user is attempting to access a valid file,
+	#Checks to see if the user is attempting to access a valid file,
     #such as an image or css document, if this isn't true it sends the
     #request to index.php
     RewriteCond %{REQUEST_FILENAME} !-d

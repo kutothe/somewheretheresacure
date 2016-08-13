@@ -19,10 +19,12 @@
 
             <section class="header-right no-print">
 				<h4>&#9834; Anthem of Hope</h4>
-				<audio controls loop>
-					<source src="<?php echo ASSETS_URL; ?>audio/molly-gartland-johnson_somewheretheresacure-for-sarah.mp3" type="audio/mpeg">
-					Your browser does not support the audio element.
-				</audio>
+				<div class="audio-con">
+					<audio controls loop>
+						<source src="<?php echo ASSETS_URL; ?>audio/molly-gartland-johnson_somewheretheresacure-for-sarah.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+				</div>
             </section>
         </div>
     </div>

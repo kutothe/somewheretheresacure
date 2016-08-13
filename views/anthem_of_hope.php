@@ -14,8 +14,10 @@
 			Since that time, every time I hear the song - it is still so powerful to me and think about how it can really touch people and make a difference. I have secured the rights to share my song with you today. Anyone can hear the song for free on my website. I hope you like it.
 		</p>
 		<p>
-			Last but not least:<br/>
-			<a href="https://www.reverbnation.com/somedaygirl/song/8016183-somewheretheresacure-for-sarah" class="button spacer-top" target="_blank">The song can be downloaded from here</a>
+			Last but not least, the song can be downloaded:
+		</p>
+		<p class="centered">
+			<a href="https://www.reverbnation.com/somedaygirl/song/8016183-somewheretheresacure-for-sarah" class="button spacer-top" target="_blank">Download Here</a>
 		</p>
 	</div>
 	<div class="left-content">

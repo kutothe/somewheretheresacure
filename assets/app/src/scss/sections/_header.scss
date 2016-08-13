@@ -44,6 +44,7 @@
 	}
 
 	#header-app-logo {
+		position: relative;
 		display: none;
 		margin-bottom: 36px;
 		font-weight: 600;
@@ -133,7 +134,19 @@
 			box-shadow: none;
 			color: #000;
 		}
+
+		&:before {
+			content: '';
+			position: absolute;
+		    left: 0;
+		    top: 0;
+			right: 0;
+			bottom: 0;
+		    opacity: 0.15;
+			background-image: url('../img/header-bg.jpg');
+		}
 	}
+
 
 	.header-left {
 		padding-top: 45px;
@@ -149,12 +162,16 @@
 		text-align: center;
 		transition: padding .2s linear;
 
-		audio {
+		.audio-con {
 			opacity: .75;
 			transition: opacity .2s linear;
 
 			&:hover {
 				opacity: 1;
+			}
+
+			audio {
+				outline: none;
 			}
 		}
 
