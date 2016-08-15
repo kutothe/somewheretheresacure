@@ -27,6 +27,7 @@ $black: #000;
 $white: #fff;
 $blue: #477dca;
 $purple: #5d0088;
+$sky-blue: #75a2c7;
 $dark-gray: #282828;
 $medium-gray: #666766;
 $light-gray: #ccc;
@@ -35,12 +36,13 @@ $off-white: #f2f2f2;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$action-color: $purple;
+$action-color: $sky-blue;
 $footer-text-color: #afaeaf;
+$header-text-color: $white;
 
 
 // Backgrounds
-$header-background-color: $purple;
+$header-background-color: $sky-blue;
 $base-background-color: #fff;
 $footer-background-color: #20201f;
 

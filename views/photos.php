@@ -23,8 +23,7 @@
 		slickCon.slick({
 			infinite: true,
 			dots: false,
-			autoplay: true,
-			autoplaySpeed: 5000
+			mobileFirst: true
 		});
 
 		firstImg.on('load', function() {

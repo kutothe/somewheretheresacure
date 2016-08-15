@@ -5,7 +5,7 @@
 	left: 0;
 	right: 0;
 	height: 52px;
-	background-color: $action-color;
+	background-color: $sky-blue;
 	box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
 	z-index: 1001;
 
@@ -19,7 +19,7 @@
 		margin-top: 16px;
 		text-align: center;
 		font-size: 1.2em;
-		color: #fff;
+		color: $header-text-color;
 	}
 
 	@include min($mobile-break + 1) {
@@ -29,7 +29,7 @@
 
 #header {
 
-	background: #5d0088;
+	background: $sky-blue;
 	min-height: 243px;
 	transition: height .2s linear;
 
@@ -48,7 +48,7 @@
 		display: none;
 		margin-bottom: 36px;
 		font-weight: 600;
-		color: #fff;
+		color: $header-text-color;
 		font-family: $montserrat;
 		transition: margin .2s linear;
 
@@ -73,11 +73,11 @@
 				font-family: $montserrat;
 				font-weight: 600;
 				font-size: .9em;
-				color: #fff;
+				color: $header-text-color;
 			}
 
 			&:hover, &.selected {
-				border-bottom: 2px solid #fff;
+				border-bottom: 2px solid $header-text-color;
 			}
 		}
 
@@ -132,8 +132,8 @@
 
 	.fixed {
 		min-height: 178px;
-		background: #5d0088;
-		color: #fff;
+		background: $sky-blue;
+		color: $header-text-color;
 		box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
 		@include position(absolute, 0 0 0 0);
 
@@ -167,6 +167,7 @@
 	}
 
 	.header-right {
+		position: relative;
 		text-align: center;
 		transition: padding .2s linear;
 
