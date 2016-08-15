@@ -30,16 +30,12 @@
 #header {
 
 	background: $sky-blue;
-	min-height: 243px;
+	min-height: 178px;
 	transition: height .2s linear;
 
 	@include position(relative);
-	@include min($mobile-break + 1) {
-		min-height: 178px;
-	}
 
 	@include max($mobile-break) {
-		min-height: 186px;
 		background: #eee;
 	}
 
@@ -138,9 +134,7 @@
 		@include position(absolute, 0 0 0 0);
 
 		@include max($mobile-break) {
-			background: #eee;
 			box-shadow: none;
-			color: #000;
 		}
 
 		&:before {
@@ -152,6 +146,7 @@
 			bottom: 0;
 		    opacity: 0.4;
 			background-image: url('../img/header-bg-clouds2.png');
+			transition: top .2s linear;
 		}
 	}
 
@@ -226,6 +221,10 @@ body.menuout #header {
 
 			#header-app-logo {
 				margin-bottom: 18px;
+			}
+
+			&:before {
+				top: -28px;
 			}
 		}
 	}
