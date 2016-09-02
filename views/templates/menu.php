@@ -29,6 +29,10 @@
 			case 'contact.php':
 				$selected = 6;
 				break;
+
+			case 'news.php':
+				$selected = 7;
+				break;
 		}
 	}
 ?>
@@ -42,6 +46,9 @@
 	</li>
 	<li class="<?php if ($selected == 2) echo 'selected' ?>">
 		<a href="<?php echo BASE_URL; ?>anthem_of_hope" alt="Anthem of Hope"><span>Anthem of Hope</span></a>
+	</li>
+	<li class="<?php if ($selected == 7) echo 'selected' ?>">
+		<a href="<?php echo BASE_URL; ?>news" alt="News"><span>News</span></a>
 	</li>
 	<li class="<?php if ($selected == 4) echo 'selected' ?>">
 		<a href="<?php echo BASE_URL; ?>events_and_links" alt="Events and Links"><span>Events &amp; Links</span></a>

@@ -1,4 +1,12 @@
 
+.fb_iframe_widget:before {
+
+}
+.fb_iframe_widget[fb-xfbml-state="rendered"]:before {
+	
+}
+
+
 .social-links-container {
 	margin-bottom: 20px;
 

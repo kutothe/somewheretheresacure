@@ -51,7 +51,7 @@
 </head>
 
 <body class="<?php if (isset($is_home_page) && $is_home_page) echo 'is-home-page'; ?>">
-
+	<div id="body-overlay"></div>
 	<?php
 		require_once(BASE_PATH.'views/templates/header_app.php');
 

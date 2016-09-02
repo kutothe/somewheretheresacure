@@ -3,6 +3,8 @@
 	@include outer-container;
 
 	.left-content {
+		margin-bottom: 50px;
+
 		@include min($mobile-break) {
 			@include span-columns(5);
 		}
@@ -11,7 +13,14 @@
 	.sidebar-right {
 		background-color: #eaeaea;
 		padding: 42px;
-		margin-bottom: 50px;
+
+		&.no-bg-color {
+			background-color: transparent;
+		}
+
+		&.no-padding {
+			padding: 0px;
+		}
 
 		@include min($mobile-break) {
 			@include span-columns(5);
