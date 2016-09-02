@@ -1,10 +1,11 @@
 
-.page-with-sidebar-right {
+.page-with-sidebar-right-top {
 	@include outer-container;
 
 	.left-content {
 		@include min($mobile-break) {
 			@include span-columns(5);
+			@include shift(-12);
 		}
 	}
 
@@ -15,7 +16,7 @@
 
 		@include min($mobile-break) {
 			@include span-columns(5);
-			@include shift(2);
+			@include shift(7);
 			margin-bottom: 0;
 		}
 	}

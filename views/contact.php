@@ -3,19 +3,6 @@
 
 <div class="page-with-sidebar-right">
 
-	<div class="sidebar-right">
-		<p>
-			We would love to hear your comments and any feedback that you may have about the website.
-		</p>
-
-		<p>
-			Send me an email at: <a href="mailto:somewheretheresacure@gmail.com">somewheretheresacure@gmail.com</a>
-		</p>
-
-		<p class="bold">
-			Thanks for visiting... and Keep Believing!
-		</p>
-	</div>
 	<div class="left-content">
 		<h2 class="page-title">
 			Contact Us
@@ -34,6 +21,23 @@
 		</p>
 	</div>
 
+	<div class="sidebar-right">
+		<p class="spacer-bottom-larger">
+			<img src="<?php echo ASSETS_URL; ?>img/pages/contact_us/Gt_2D1E.jpg" alt="contact us right image"/>
+		</p>
+
+		<p>
+			We would love to hear your comments and any feedback that you may have about the website.
+		</p>
+
+		<p>
+			Send me an email at: <a href="mailto:somewheretheresacure@gmail.com">somewheretheresacure@gmail.com</a>
+		</p>
+
+		<p class="bold">
+			Thanks for visiting... and Keep Believing!
+		</p>
+	</div>
 
 </div>
 

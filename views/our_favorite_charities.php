@@ -3,38 +3,6 @@
 
 <div class="page-with-sidebar-right">
 
-	<div class="sidebar-right">
-		<h3 class="spacer-bottom-larger">
-			Sarah's Favorite Artists
-		</h3>
-
-		<p>
-			<a href="/web/20131208122625/http://www.billygilman.com/online/billygilman_riiff05_photos/billygilman_riiff_autographs/billy_riiff_auto01.html" title="click here" target="_blank">Billy Gilman</a>
-		</p>
-
-		<p><a href="/web/20131208122625/http://youtu.be/vEGBmXXYJxg" title="Cassandra Kubinski" target="_blank">Cassandra Kubinski</a></p>
-
-		<p><a href="/web/20131208122625/http://www.jonasbrothers.com/" target="_blank">The Jonas Brothers</a></p>
-
-		<p><a href="/web/20131208122625/http://www.justinbiebermusic.com/" target="_blank">Justin Bieber</a></p>
-
-		<p><a href="/web/20131208122625/http://www.mileycyrus.com/" target="_blank">Miley Cyrus</a></p>
-
-		<p><a href="/web/20131208122625/http://www.demilovato.com/" target="_blank">Demi Lovato</a></p>
-
-		<p><a href="/web/20131208122625/http://selenagomez.com/" target="_blank">Selena Gomez</a></p>
-
-        <p><a href="/web/20131208122625/http://onedirection.com/" target="_blank">One Direction</a></p>
-
-        <p><a href="/web/20131208122625/http://taylorswift.com/" target="_blank">Taylor Swift</a></p>
-
-        <p><a href="/web/20131208122625/http://edsheeran.com/" target="_blank">Ed Sheeran</a></p>
-
-        <p><a href="/web/20131208122625/http://officialbirdy.com/" target="_blank">Birdy</a></p>
-
-        <p><a href="/web/20131208122625/http://timefliesmusic.com/" target="_blank">Timeflies</a></p>
-
-	</div>
 	<div class="left-content">
 		<h2 class="page-title">
 			Our Favorite Charities
@@ -72,24 +40,41 @@
 
 		<p><a href="http://www.pdf.org/" title="www.pdf.org">Parkinson's Foundation</a></p>
 
-		<p><a href="http://www.leukemia-lymphoma.org/all_page?item_id=22220" title="Leukemia &amp; Lymphoma Society">Leukemia &amp; Lymphoma Society</a></p>
+		<p class="spacer-top-larger">
+			<a href="http://www.leukemia-lymphoma.org/all_page?item_id=22220" title="Leukemia &amp; Lymphoma Society">Leukemia &amp; Lymphoma Society</a>
+		</p>
 
 		<p>
 			The Leukemia &amp; Lymphoma Society link is dedicated to Granny and Mrs. Greco
 		</p>
+		<p class="spacer-bottom-largest">
+			<img src="<?php echo ASSETS_URL; ?>img/pages/charities/granny.jpg" alt="granny and mrs greco"/>
+		</p>
 
-		<p>
+		<p class="spacer-top-larger">
 			<a href="http://www.brentshapiro.org/" title="Brent Shapiro Foundation for Awareness">The Brent Shapiro Foundation For Drug Awareness</a>
 		</p>
 
 		<p>
-			As we learned unfortunately- Addiction&nbsp; is also a very strong and deadly disease that we would also like to bring awareness to. It is too late for our son Michael however with awareness and enlightment into this disease, maybe we can save other families the pain that we had to deal with.&nbsp; This is dedicated to our Guardian Angel- Michael Alan Johnson (1979-1997)&nbsp; We love and miss him everyday... "<a href="1%20month.doc" title="1 month">1 month</a>"&nbsp; "<a href="2%20years.doc" title="2 years">2 years</a>"
+			As we learned unfortunately- Addiction&nbsp; is also a very strong and deadly disease that we would also like to bring awareness to. It is too late for our son Michael however with awareness and enlightment into this disease, maybe we can save other families the pain that we had to deal with.&nbsp; This is dedicated to our Guardian Angel- Michael Alan Johnson (1979-1997)&nbsp; We love and miss him everyday...
+			&nbsp;
+			"<a href="<?php echo ASSETS_URL; ?>docs/the_truth.doc" title="1 month">1 month</a>"
+			&nbsp;
+			"<a href="<?php echo ASSETS_URL; ?>docs/I_have_been_waiting_silently_for_the_last_two_years_to_speak.doc" title="2 years">2 years</a>"
+		</p>
+		<p class="spacer-bottom-largest">
+			<img src="<?php echo ASSETS_URL; ?>img/pages/charities/michael_and_sarah.jpg" alt="michael and sarah"/>
 		</p>
 
-		<p><a href="http://www.magicjohnson.org/" title="http://www.magicjohnson.org">The Magic Johnson Foundation</a></p>
+		<p class="spacer-top-larger">
+			<a href="http://www.magicjohnson.org/" title="http://www.magicjohnson.org">The Magic Johnson Foundation</a>
+		</p>
 
 		<p>
 			The Magic Johnson Foundation is dedicated to Rich Arnold
+		</p>
+		<p class="spacer-bottom-largest">
+			<img src="<?php echo ASSETS_URL; ?>img/pages/charities/rich5.jpg" alt="rich arnold"/>
 		</p>
 
 		<p>
@@ -97,6 +82,38 @@
 		</p>
 	</div>
 
+	<div class="sidebar-right">
+		<h3 class="spacer-bottom-larger">
+			Sarah's Favorite Artists
+		</h3>
+
+		<p>
+			<a href="/web/20131208122625/http://www.billygilman.com/online/billygilman_riiff05_photos/billygilman_riiff_autographs/billy_riiff_auto01.html" title="click here" target="_blank">Billy Gilman</a>
+		</p>
+
+		<p><a href="/web/20131208122625/http://youtu.be/vEGBmXXYJxg" title="Cassandra Kubinski" target="_blank">Cassandra Kubinski</a></p>
+
+		<p><a href="/web/20131208122625/http://www.jonasbrothers.com/" target="_blank">The Jonas Brothers</a></p>
+
+		<p><a href="/web/20131208122625/http://www.justinbiebermusic.com/" target="_blank">Justin Bieber</a></p>
+
+		<p><a href="/web/20131208122625/http://www.mileycyrus.com/" target="_blank">Miley Cyrus</a></p>
+
+		<p><a href="/web/20131208122625/http://www.demilovato.com/" target="_blank">Demi Lovato</a></p>
+
+		<p><a href="/web/20131208122625/http://selenagomez.com/" target="_blank">Selena Gomez</a></p>
+
+		<p><a href="/web/20131208122625/http://onedirection.com/" target="_blank">One Direction</a></p>
+
+		<p><a href="/web/20131208122625/http://taylorswift.com/" target="_blank">Taylor Swift</a></p>
+
+		<p><a href="/web/20131208122625/http://edsheeran.com/" target="_blank">Ed Sheeran</a></p>
+
+		<p><a href="/web/20131208122625/http://officialbirdy.com/" target="_blank">Birdy</a></p>
+
+		<p><a href="/web/20131208122625/http://timefliesmusic.com/" target="_blank">Timeflies</a></p>
+
+	</div>
 
 </div>
 

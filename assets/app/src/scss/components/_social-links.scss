@@ -1,69 +1,53 @@
 
-.social-links--with-icons {
-	p {
-		text-transform: uppercase;
-		font-size: 15px;
-		font-weight: 700;
-		font-family: "Myraid Pro", Helvetica, Roboto, Arial, sans-serif;
-	}
+.social-links-container {
+	margin-bottom: 20px;
 
-	a:before {
-		content: "";
-		width:29px;
-		height: 29px;
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		margin: auto 0;
-		border: 2px solid #282828;
-		border-radius: 4px;
+	a {
+		display: inline-block;
+		width: 60px;
+		height: 60px;
+		margin: 14px;
+		opacity: .8;
+		background-size: contain;
+		background-repeat: no-repeat;
+		transition: opacity .2s linear;
 
-		background-repeat: no-repeat !important;
-		-webkit-transition: border 300ms ease;
-		-moz-transition: border 300ms ease;
-		transition: border 300ms ease;
-	}
+		&.twitter {
+			background-image: url('../img/social/twitter.png');
+		}
 
-	a:hover:before {
-		border: 2px solid white;
-		// border-radius: 5.5px;
-	}
+		&.facebook {
+			background-image: url('../img/social/facebook.png');
+		}
 
-	ul {
-		margin-left: -2px;
+		&.wordpress {
+			background-image: url('../img/social/wordpress.png');
+		}
 
-		li {
-			position: relative;
-			width: 30px;
+		&.blogger {
+			background-image: url('../img/social/blogger.png');
+		}
+
+		&.about-me {
+			background-image: url('../img/social/about_me.png');
+		}
+
+		&.youtube {
+			width: 85px;
+			background-image: url('../img/social/youtube.png');
+		}
+
+		&:hover {
+			opacity: 1;
+		}
+
+		@include max($mobile-break) {
 			height: 30px;
-			display: inline-block;
-			margin-right: 7px;
-
-			&.facebook {
-				a:before {
-					background: url('../img/icon-facebook.png');
-				}
-			}
-
-			&.twitter {
-				a:before {
-					background: url('../img/icon-twitter.png');
-				}
-			}
-
-			&.instagram {
-				a:before {
-					background: url('../img/icon-instagram.png');
-				}
-			}
+			width: 30px;
+			margin: 5px;
 
 			&.youtube {
-				a:before {
-					width: 39px;
-					height: 29px;
-					border-radius: 10px;
-					background: url('../img/icon-youtube.png');
-				}
+				width: 42.5px;
 			}
 		}
 	}

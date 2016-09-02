@@ -3,17 +3,6 @@
 
 <div class="page-with-sidebar-right">
 
-	<div class="sidebar-right">
-		<h3>
-			Supporters
-		</h3>
-		<p>
-			Mike Fraser<br/>
-			Tad<br/>
-			My Family and Friends<br/>
-			Mark Niosi at <a href="www.simplepagesgolive.com" target="_blank">www.simplepagesgolive.com</a><br/>
-		</p>
-	</div>
 	<div class="left-content">
 		<h2 class="page-title">
 			Thank You
@@ -111,6 +100,21 @@
 		</p>
 	</div>
 
+	<div class="sidebar-right">
+		<p class="spacer-bottom-larger">
+			<img src="<?php echo ASSETS_URL; ?>img/pages/thank_you/Gt_56B5.jpg" alt="thank you image"/>
+		</p>
+
+		<h3>
+			Supporters
+		</h3>
+		<p>
+			Mike Fraser<br/>
+			Tad<br/>
+			My Family and Friends<br/>
+			Mark Niosi at <a href="www.simplepagesgolive.com" target="_blank">www.simplepagesgolive.com</a><br/>
+		</p>
+	</div>
 
 </div>
 

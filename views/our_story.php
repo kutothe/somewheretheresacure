@@ -1,7 +1,7 @@
 
 <?php require_once(BASE_PATH.'views/templates/header.php'); ?>
 
-<div class="our-story-container">
+<div class="our-story-container spacer-bottom-largest">
 	<div class="left-column">
 		<h2 class="page-title">
 			Our Story

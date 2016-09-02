@@ -23,6 +23,10 @@
 			<p class="spacer-top-larger">
 				Help find a cure, donate to a charity of your choice dedicated to research and finding a cure.
 			</p>
+
+			<p class="spacer-top-larger">
+				<a href="<?php echo BASE_URL; ?>our_favorite_charities">Our Favorite Charities</a>
+			</p>
 		</div>
 
 		<div class="right-column">
