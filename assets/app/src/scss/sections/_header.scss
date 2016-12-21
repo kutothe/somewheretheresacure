@@ -39,6 +39,10 @@
 		background: #eee;
 	}
 
+	.container {
+		position: relative;
+	}
+
 	#header-app-logo {
 		position: relative;
 		display: none;
@@ -165,14 +169,12 @@
 		padding-top: 45px;
 		padding-bottom: 14px;
 		transition: padding .2s linear;
-
-		@include min($mobile-break+1) {
-			@include span-columns(8.5);
-		}
 	}
 
 	.header-right {
-		position: relative;
+		position: absolute;
+		top: 42px;
+		right: 26px;
 		text-align: center;
 		transition: padding .2s linear;
 
@@ -190,12 +192,13 @@
 		}
 
 		@include min($mobile-break+1) {
-			padding-top: 81px;
 			text-align: right;
-			@include span-columns(3.5);
 		}
 
 		@include max($mobile-break) {
+			position: relative;
+			top: initial;
+			right: initial;
 			padding-top: 24px;
 		}
 	}

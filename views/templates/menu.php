@@ -6,8 +6,9 @@
 		switch (SELECTED_VIEW)
 		{
 			case '':
-			case 'home':
-				$selected = 0;
+			case 'about.php':
+			case 'home.php':
+				$selected = 8;
 				break;
 
 			case 'our_story.php':
@@ -58,5 +59,8 @@
 	</li>
 	<li class="<?php if ($selected == 6) echo 'selected' ?>">
 		<a href="<?php echo BASE_URL; ?>contact" alt="Contact Us"><span>Contact Us</span></a>
+	</li>
+	<li class="<?php if ($selected == 8) echo 'selected' ?>">
+		<a href="<?php echo BASE_URL; ?>about" alt="About"><span>About</span></a>
 	</li>
 </ul>

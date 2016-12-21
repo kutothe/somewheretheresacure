@@ -20,7 +20,7 @@ fjs.parentNode.insertBefore(js, fjs);
 	<div class="left-content">
 		<div class="loading-spinner centered facebook spacer-bottom"><div class="outer"><div class="inner"></div></div></div>
 		<?php
-			$settings	= 'data-width="500px"';
+			$settings	= 'data-width="500px" data-height="800px"';
 		?>
 		<div class="fb-page" data-href="https://www.facebook.com/somewheretheresacure" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" <?php echo $settings; ?>></div>
 	</div>

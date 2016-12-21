@@ -15,7 +15,7 @@
 		$first_key		= trim(key($_GET), '/');
 		$parts			= explode('/', $first_key);
 
-		if (count($parts) > 0)
+		if (count($parts) > 0 && $parts[0] != 'about')
 		{
 			$view		= $parts[0].'.php';
 			// check to see if invalid view file
@@ -23,12 +23,10 @@
 			{
 				$view	= 'error_404.php';
 			}
-			else
-			{
-				define('SELECTED_VIEW', $view);
-			}
 		}
 	}
+	
+	define('SELECTED_VIEW', $view);
 
 	require_once($view_path.$view);
 ?>
